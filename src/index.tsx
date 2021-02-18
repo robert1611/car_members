@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { Home, CreateCar, Cars } from './components';
+import { Home, CreateCar, Cars, UpdateCar} from './components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Navbar, Nav } from 'react-bootstrap';
 import logo from './assets/img/car.jpg';
@@ -60,6 +60,9 @@ render(
         </Route>
         <Route path="/cars">
           <Cars />
+        </Route>
+        <Route path = '/update'>
+          <UpdateCar />
         </Route>
       </Switch>
 

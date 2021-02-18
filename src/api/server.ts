@@ -17,7 +17,7 @@ export const server_calls = {
         return await response.json()
     },   
     delete: async (id:string) => {
-        const response = await fetch(`/cars`,{
+        const response = await fetch(`/cars/${id}`,{
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
